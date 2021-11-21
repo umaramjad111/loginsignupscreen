@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="bottom"
+    android:layout_height="match_parent"
+    android:background="@drawable/trees"
+    tools:context=".signup">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:backgroundTint="#0000ffff"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:padding="35dp"
+
+            android:background="@drawable/cardcorder"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/signuptext"
+                android:text="Sign up"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="First Name"
+                android:padding="5dp"
+                android:id="@+id/firstname"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/signuptext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/edittextfirstname"
+                android:background="@drawable/editcorner"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/firstname"
+                android:hint="Enter your first name"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Last Name"
+                android:padding="5dp"
+                android:id="@+id/lastname"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edittextfirstname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/editlastfirstname"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lastname"
+                android:hint="Enter your first name"
+                android:background="@drawable/editcorner"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Email"
+                android:padding="5dp"
+                android:id="@+id/emailtext"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editlastfirstname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/emailedit"
+                android:background="@drawable/editcorner"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emailtext"
+                android:hint="Enter your Email"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawablePadding="7dp"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Password"
+                android:padding="5dp"
+                android:id="@+id/passwordtext"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emailedit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/passwordedit"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editcorner"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/passwordtext"
+                android:hint="Enter your Password"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="7dp"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Confirm Password"
+                android:padding="5dp"
+                android:id="@+id/conpasswordtext"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/passwordedit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/conpasswordedit"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/conpasswordtext"
+                android:hint="Enter your Password"
+                android:background="@drawable/editcorner"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="7dp"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/loginbtn"
+                android:text="Sign up"
+                android:backgroundTint="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/conpasswordedit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+             </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
